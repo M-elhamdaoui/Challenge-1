@@ -1,0 +1,50 @@
+.hero{
+    display: flex;
+    justify-content: center;
+
+    
+    &__container{
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+        @include breakpoint-up(large){
+            padding-top:0.7rem;
+        }
+        
+    }
+    &__image{
+        img{
+            width:18.9375rem;
+            height:auto ;
+            @include breakpoint-up(medium){
+                width:27.5rem;
+                height: auto;
+            }
+        }
+
+    }
+    &__content{
+        margin: 0 auto;
+        width:18.9375rem;
+
+        @include breakpoint-up(medium){
+            width:27.5rem;
+
+        }
+        &:not(:last-child){
+            margin-bottom: 1.1875rem;
+        }
+       h2{
+           font-weight: 700;
+           font-size: 1.75em;
+           margin-bottom: 1.1875rem;
+       }
+       p{
+           font-size: 0.9rem;
+           margin-bottom: 2rem;
+       }
+      
+        
+    
+    }
+}

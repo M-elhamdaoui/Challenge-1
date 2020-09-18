@@ -1,0 +1,31 @@
+.header{
+    color:$white;
+    font-size: $font-med;
+   
+    &__container{
+        
+        margin:0 auto ;
+
+      
+        
+    }
+    &__logo{
+       img{
+        height:1.75rem ;
+        width:5.625rem ;
+       }
+    }
+
+    &__menu{
+       
+        a{
+           
+            color: white;
+           
+            &:not(:last-child){
+                margin-right: 1.875rem;
+            }
+        }
+        
+    }
+}

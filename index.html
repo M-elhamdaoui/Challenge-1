@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
-
+  <link rel="stylesheet" href="css/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,16 +16,53 @@
   </style>
 </head>
 <body>
-  Features
-  Team
-  Sign In
 
-  All your files in one secure location, accessible anywhere.
+  <header class="header">
+    <nav class="header__container container--pall flex flex-jc-sb flex-ai-c">
+      <div class="header__logo">
+        <img src="images/logo.svg" alt="Logo"  >
+      </div>
+      <div class="header__menu">
+        <a href="#">Features</a>
+        <a href="#">Team</a>
+        <a href="#">Sing In</a>
+      </div>
+    
 
-  Fylo stores all your most important files in one secure location. Access them wherever 
-  you need, share and collaborate with friends family, and co-workers.
+    </nav>
+  </header>
 
-  Get Started
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__image">
+        <img src="images/illustration-intro.png" alt="main" >
+      </div>
+      <div class="hero__content">
+        <div class="title">
+          <h2>All your files in one secure location, accessible anywhere.</h2>
+        </div>
+          <div class="text">
+          <p>Fylo stores all your most important files in one secure location. Access them wherever 
+            you need, share and collaborate with friends family, and co-workers.</p>
+          </div>
+            <div class="buttons">
+            <a href="#" class="button">Get Started</a>
+          </div>
+          
+         
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 
+
+  
+
+  
+
+  
 
   Access your files, anywhere
 
@@ -94,13 +132,13 @@
 
   Contact Us
   Terms
-  Privacy
+  Privacy 
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer>-->
 </body>
 </html>

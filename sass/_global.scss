@@ -1,0 +1,130 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    position: relative;
+    margin:0;
+    padding: 0;
+    font-weight: 400;
+    font-family: 'Open Sans','Raleway', sans-serif;
+    font-size: $font-med;
+    line-height: 1.5;
+    background-color: $darkBlueSingUp;
+    color: $white;
+    height: 300vh;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 76vh;
+        left: -10vw;
+        bottom: 0;
+        right: 0;
+        
+        z-index: -1;
+        background-image:url('/Challenge-1/images/bg-curvy-desktop.svg');
+        background-size:100% ;
+        background-repeat: no-repeat;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: $darkBlueMain;
+        top: 140vh;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+a,a:hover,a:visited{
+    text-decoration: none;
+}
+
+.container{
+    max-width:69.375rem ;
+    margin:0 auto;
+    
+   
+    
+    
+    &--pall{
+        padding-left: 1.5625rem;
+        padding-right: 1.5625rem;
+        padding-top:1.5625rem ;
+        padding-bottom:1.5625rem ;
+        @include breakpoint-up(large){
+            padding-top: 2.375rem;
+            padding-bottom:2.375rem ;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+    }
+    &--px{
+        padding-left: 1.5625rem;
+        padding-right: 1.5625rem;
+        @include breakpoint-up(large){
+            padding-right: 2.5rem;
+            padding-left: 2.5rem;
+        }
+    }
+    &--py{
+        padding-top:1.5625rem;
+        padding-bottom:1.5625rem ;
+        @include breakpoint-up(large){
+            padding-top:2.375rem;
+            padding-bottom:2.375rem ;
+        }
+
+    }
+    &--pt{
+        padding-top:1.5625rem ;
+        @include breakpoint-up(large){
+            padding-top: 2.375rems;
+           
+        }
+    }
+    &--pl{
+        padding-left: 1.5625rem;
+        @include breakpoint-up(large){
+            padding-left: 2.5rem;
+        }
+    }
+    &--pb{
+        padding-bottom:1.5625rem ;
+        @include breakpoint-up(large){
+            
+            padding-bottom:2.375rem;
+        }
+    }
+    &--pr{
+        padding-right: 1.5625rem;
+        @include breakpoint-up(large){
+            padding-right: 2.5rem;
+        }
+    }
+}
+.flex{
+    display: flex;
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+}
+.button,button{
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to right ,$cyan,$blue);
+     padding:0.8125rem  3.125rem;
+    border-radius: 25px;
+}
