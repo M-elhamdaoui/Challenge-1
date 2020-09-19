@@ -1,17 +1,13 @@
 .hero{
+    position: relative;
     display: flex;
     justify-content: center;
-
+   
+  
+  
+  
     
-    &__container{
-        align-items: center;
-        text-align: center;
-        padding-top: 2rem;
-        @include breakpoint-up(large){
-            padding-top:0.7rem;
-        }
-        
-    }
+  
     &__image{
         img{
             width:18.9375rem;

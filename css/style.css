@@ -23,13 +23,14 @@ body {
 body::before {
   content: "";
   position: absolute;
-  top: 76vh;
-  left: -10vw;
-  bottom: 0;
+  top: 0;
+  left: -40%;
+  bottom: 70%;
   right: 0;
   z-index: -1;
-  background-image: url("/Challenge-1/images/bg-curvy-desktop.svg");
-  background-size: 100%;
+  background-position: 0 100%;
+  background-image: url("/Challenge-1/images/bg-curvy-mobile.svg");
+  background-size: 130%;
   background-repeat: no-repeat;
 }
 
@@ -37,11 +38,37 @@ body::after {
   content: "";
   position: absolute;
   background-color: #181f2a;
-  top: 140vh;
+  top: 90vh;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: -1;
+}
+
+@media (min-width: 40em) {
+  body::after {
+    content: "";
+    position: absolute;
+    background-color: #181f2a;
+    top: 136vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 54%;
+    right: 0;
+    z-index: -1;
+    background-position: 0 100%;
+    background-image: url("/Challenge-1/images/bg-curvy-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 a, a:hover, a:visited {
@@ -155,6 +182,24 @@ a, a:hover, a:visited {
   background: linear-gradient(to right, #65e2d9, #339ecc);
   padding: 0.8125rem  3.125rem;
   border-radius: 25px;
+  transition: all 300ms ease-in-out;
+  opacity: 0.75;
+}
+
+.button:hover, button:hover {
+  opacity: 1;
+}
+
+.containers {
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+@media (min-width: 64em) {
+  .containers {
+    padding-top: 0.7rem;
+  }
 }
 
 .header {
@@ -180,8 +225,23 @@ a, a:hover, a:visited {
 }
 
 .hero {
+  position: relative;
   display: flex;
   justify-content: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 140vh;
+  right: 0;
+  z-index: 1;
+  background-position: 0 100%;
+  background-image: url("/Challenge-1/images/bg-curvy-desktop.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .hero__container {
@@ -232,5 +292,38 @@ a, a:hover, a:visited {
 .hero__content p {
   font-size: 0.9rem;
   margin-bottom: 2rem;
+}
+
+.cards {
+  padding-top: 7.4375rem;
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .cards__container {
+    max-width: 40rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.cards__card {
+  width: 17rem;
+  padding-bottom: 5.625rem;
+}
+
+.cards .logo {
+  width: auto;
+  height: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

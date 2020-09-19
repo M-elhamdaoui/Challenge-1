@@ -1,0 +1,43 @@
+.cards{
+    padding-top: 7.4375rem;
+    &__container{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        @include breakpoint-up(medium){
+            max-width: 40rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            
+           
+
+        }
+
+      
+
+    }
+    &__card{
+        width: 17rem;
+        h2{
+           
+        }
+       
+                padding-bottom: 5.625rem;
+           
+       
+        
+    }
+    .logo{
+        width: auto;
+        height:5rem;
+        
+
+    }
+}
