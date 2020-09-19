@@ -24,7 +24,7 @@
 
     }
     &__card{
-        width: 17rem;
+        width: 19rem;
         @include breakpoint-up(medium){
             &:nth-child(odd){
                 padding-right: 3rem;
