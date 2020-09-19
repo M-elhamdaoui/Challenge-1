@@ -20,11 +20,19 @@
 
         }
 
-      
+     
 
     }
     &__card{
         width: 17rem;
+        @include breakpoint-up(medium){
+            &:nth-child(odd){
+                padding-right: 3rem;
+      
+            }
+
+        }
+       
         h2{
            
         }
