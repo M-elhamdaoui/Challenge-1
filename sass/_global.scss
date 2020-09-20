@@ -31,6 +31,7 @@ body{
             
             background-size:130% ;
             background-repeat: no-repeat;
+            overflow: hidden;
           
         }
         &::after{
@@ -38,9 +39,10 @@ body{
             position: absolute;
             background-color: $darkBlueMain;
             top: 90vh;
-            bottom: 0;
+            bottom: -200vh;
             left: 0;
             right: 0;
+           
             z-index: -1;
         }
         @include breakpoint-up(medium){
@@ -49,7 +51,7 @@ body{
                 position: absolute;
                 background-color: $darkBlueMain;
                 top: 136vh;
-                bottom: 0;
+               
                 left: 0;
                 right: 0;
                 z-index: -1;
@@ -162,6 +164,7 @@ a,a:hover,a:visited{
     border-radius: 25px;
     transition: all 300ms ease-in-out;
    opacity: 0.75 ;
+   overflow: hidden;
     &:hover{
         opacity: 1;
     }

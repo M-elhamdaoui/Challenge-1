@@ -1,0 +1,44 @@
+.productive{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: nowrap;
+     
+        @include breakpoint-up(large){
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            
+           
+            flex: 1 1 1;
+
+        }
+        
+    }
+    &__image{
+        img{
+            max-width: 85%;
+            height: auto;
+        }
+    }
+    &__content{
+        width: 25rem;
+
+        h2{
+           
+
+            @include breakpoint-up(large){
+                font-size: 2rem;
+            }
+        }
+        a{
+           font-size: 1rem;
+            color: $cyan;
+            border-bottom: 2px solid $cyan;
+        }
+    }
+}

@@ -32,6 +32,7 @@ body::before {
   background-image: url("/Challenge-1/images/bg-curvy-mobile.svg");
   background-size: 130%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 body::after {
@@ -39,7 +40,7 @@ body::after {
   position: absolute;
   background-color: #181f2a;
   top: 90vh;
-  bottom: 0;
+  bottom: -200vh;
   left: 0;
   right: 0;
   z-index: -1;
@@ -51,7 +52,6 @@ body::after {
     position: absolute;
     background-color: #181f2a;
     top: 136vh;
-    bottom: 0;
     left: 0;
     right: 0;
     z-index: -1;
@@ -184,6 +184,7 @@ a, a:hover, a:visited {
   border-radius: 25px;
   transition: all 300ms ease-in-out;
   opacity: 0.75;
+  overflow: hidden;
 }
 
 .button:hover, button:hover {
@@ -305,5 +306,45 @@ a, a:hover, a:visited {
 .cards .logo {
   width: auto;
   height: 5rem;
+}
+
+.productive__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
+@media (min-width: 64em) {
+  .productive__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex: 1 1 1;
+  }
+}
+
+.productive__image img {
+  max-width: 85%;
+  height: auto;
+}
+
+.productive__content {
+  width: 25rem;
+}
+
+@media (min-width: 64em) {
+  .productive__content h2 {
+    font-size: 2rem;
+  }
+}
+
+.productive__content a {
+  font-size: 1rem;
+  color: #65e2d9;
+  border-bottom: 2px solid #65e2d9;
 }
 /*# sourceMappingURL=style.css.map */
