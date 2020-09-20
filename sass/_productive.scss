@@ -37,8 +37,13 @@
         }
         a{
            font-size: 1rem;
+           
             color: $cyan;
             border-bottom: 2px solid $cyan;
+            span{
+                
+                vertical-align: middle;
+            }
         }
     }
 }

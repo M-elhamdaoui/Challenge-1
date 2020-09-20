@@ -347,4 +347,8 @@ a, a:hover, a:visited {
   color: #65e2d9;
   border-bottom: 2px solid #65e2d9;
 }
+
+.productive__content a span {
+  vertical-align: middle;
+}
 /*# sourceMappingURL=style.css.map */
