@@ -4,14 +4,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        
         flex-wrap: nowrap;
      
         @include breakpoint-up(large){
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
-            text-align: left;
+            
+            
             
            
             flex: 1 1 1;
@@ -20,13 +20,16 @@
         
     }
     &__image{
+        text-align: center;
         img{
             max-width: 85%;
             height: auto;
+
         }
     }
     &__content{
         width: 25rem;
+        text-align: left;
 
         h2{
            

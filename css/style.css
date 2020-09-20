@@ -318,7 +318,6 @@ h1, h2, h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-wrap: nowrap;
 }
 
@@ -326,10 +325,12 @@ h1, h2, h3 {
   .productive__container {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    text-align: left;
     flex: 1 1 1;
   }
+}
+
+.productive__image {
+  text-align: center;
 }
 
 .productive__image img {
@@ -339,6 +340,7 @@ h1, h2, h3 {
 
 .productive__content {
   width: 25rem;
+  text-align: left;
 }
 
 @media (min-width: 40em) {
