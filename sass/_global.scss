@@ -10,7 +10,7 @@ body{
     margin:0;
     padding: 0;
     font-weight: 400;
-    font-family: 'Open Sans','Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: $font-med;
     line-height: 1.5;
     background-color: $darkBlueSingUp;
@@ -78,6 +78,11 @@ body{
 }
 a,a:hover,a:visited{
     text-decoration: none;
+}
+
+h1,h2,h3{
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 700;
 }
 
 .container{
