@@ -1,0 +1,88 @@
+.posts{
+        padding-top: 6rem;
+    &__container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+       
+
+        @include breakpoint-up(medium){
+            flex-direction: row;
+        }
+        
+
+
+    }
+    .quote{
+        position: relative;
+        margin-bottom: 3rem;
+         @include breakpoint-up(medium){
+             margin-bottom: 0;
+            margin-right: 3rem;
+         }
+       &::after{
+           content: "";
+           position: absolute;
+           top: -2rem;
+           left: -1rem;
+           right: 0;
+           bottom: 0;
+           background-image: url('/Challenge-1/images/bg-quotes.png');
+           background-repeat: no-repeat;
+           
+       }
+    }
+    .post{
+        
+        width: 19rem;
+        background-color:$darkBlueSingUp ;
+       box-shadow: 0px 2px 15px black;
+        border-radius: 5px;
+        z-index: 10;
+       position: relative;
+        
+
+        
+        &:not(:last-child){
+            margin-bottom: 3rem;
+        }
+        @include breakpoint-up(medium){
+          &:not(:last-child){
+              margin-bottom: 0;
+              margin-right: 3rem;
+          }
+        }
+        &__text{
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+        }
+        &__container{
+            padding: 20px;
+            font-size: 0.8rem;
+        }
+        &__contact{
+            display: flex;
+            align-items: center;
+            padding: 0;
+
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 25px;
+                margin-right: 20px;
+            }
+            h3{
+                font-size: 0.8rem;
+                margin: 0;
+
+            }
+            p{
+                margin: 0;
+                font-size: 0.6rem;
+            }
+
+        }
+    }
+}

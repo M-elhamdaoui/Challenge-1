@@ -30,6 +30,10 @@
     &__content{
         width: 25rem;
         text-align: left;
+        padding: 3rem;
+        @include breakpoint-up(medium){
+            padding: 0;
+        }
 
         h2{
            
