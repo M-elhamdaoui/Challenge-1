@@ -41,11 +41,11 @@ body{
             position: absolute;
             background-color: $darkBlueMain;
             top: 90vh;
-            bottom: -264vh;
+            bottom: -115%;
             left: 0;
             right: 0;
             @include breakpoint-up(medium){
-                bottom: -234vh;
+                bottom: -246vh;
             }
            @include breakpoint-up(large){
                bottom: -100vh;
