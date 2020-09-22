@@ -7,7 +7,7 @@
         position: relative;
        
 
-        @include breakpoint-up(medium){
+        @include breakpoint-up(large){
             flex-direction: row;
         }
         
@@ -17,7 +17,7 @@
     .quote{
         position: relative;
         margin-bottom: 3rem;
-         @include breakpoint-up(medium){
+         @include breakpoint-up(large){
              margin-bottom: 0;
             margin-right: 3rem;
          }
@@ -36,6 +36,7 @@
     .post{
         
         width: 19rem;
+        overflow: visible;
         background-color:$darkBlueSingUp ;
        box-shadow: 0px 2px 15px black;
         border-radius: 5px;
@@ -47,7 +48,7 @@
         &:not(:last-child){
             margin-bottom: 3rem;
         }
-        @include breakpoint-up(medium){
+        @include breakpoint-up(large){
           &:not(:last-child){
               margin-bottom: 0;
               margin-right: 3rem;

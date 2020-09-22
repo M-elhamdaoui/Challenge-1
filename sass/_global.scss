@@ -40,10 +40,15 @@ body{
             position: absolute;
             background-color: $darkBlueMain;
             top: 90vh;
-            bottom: -600vh;
+            bottom: -280vh;
             left: 0;
             right: 0;
-           
+            @include breakpoint-up(medium){
+                bottom: -234vh;
+            }
+           @include breakpoint-up(large){
+               bottom: -100vh;
+           }
             z-index: -1;
         }
         @include breakpoint-up(medium){
