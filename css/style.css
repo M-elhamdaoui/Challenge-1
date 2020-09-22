@@ -77,7 +77,7 @@ body::after {
     right: 0;
     z-index: -1;
     background-position: 0 100%;
-    background-image: url("../images/bg-curvy-desktop.svg");
+    background-image: url("/Challenge-1/images/bg-curvy-desktop.svg");
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -417,7 +417,7 @@ h1, h2, h3 {
   left: -1rem;
   right: 0;
   bottom: 0;
-  background-image: url("/Challenge-1/images/bg-quotes.png");
+  background-image: url("../images/bg-quotes.png");
   background-repeat: no-repeat;
 }
 
