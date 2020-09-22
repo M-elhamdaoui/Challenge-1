@@ -11,8 +11,10 @@
     }
     &__logo{
        img{
+           cursor: pointer;
         height:1.75rem ;
         width:5.625rem ;
+        
        }
     }
 
@@ -21,7 +23,10 @@
         a{
            
             color: white;
-           
+            transition: all 200ms ease-in-out;
+           &:hover{
+               color: $cyan;
+           }
             &:not(:last-child){
                 margin-right: 1.875rem;
             }

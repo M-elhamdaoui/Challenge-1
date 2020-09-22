@@ -230,12 +230,18 @@ h1, h2, h3 {
 }
 
 .header__logo img {
+  cursor: pointer;
   height: 1.75rem;
   width: 5.625rem;
 }
 
 .header__menu a {
   color: white;
+  transition: all 200ms ease-in-out;
+}
+
+.header__menu a:hover {
+  color: #65e2d9;
 }
 
 .header__menu a:not(:last-child) {
