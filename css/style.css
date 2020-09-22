@@ -40,7 +40,7 @@ body::after {
   position: absolute;
   background-color: #181f2a;
   top: 90vh;
-  bottom: -280vh;
+  bottom: -264vh;
   left: 0;
   right: 0;
   z-index: -1;
